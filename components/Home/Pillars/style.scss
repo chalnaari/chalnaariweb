@@ -1,0 +1,113 @@
+// color variables
+$pink: #b7029f;
+$white: #fff;
+$black: #171717;
+$black2: #2e2e2e;
+$grey: #d3d3d3;
+$yellow: #fce205;
+
+// font size variables
+$a: 1.1rem;
+$h1: 2rem;
+$h2: 1.8rem;
+$h3: 1.5rem;
+$h4: 1.3rem;
+
+.pillars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 0 4rem 0;
+
+  .pillarsHead {
+    width: 80%;
+    max-width: 1200px;
+
+    h2 {
+      text-align: center;
+      color: $black2;
+      font-size: $h2;
+      text-transform: lowercase;
+      margin: 0 0 1rem 0;
+      border-bottom: 1px solid $grey;
+    }
+  }
+
+  .pillarsContainer {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .pillarContainerChild {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      flex-direction: column;
+      width: 24%;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+        rgb(209, 213, 219) 0px 0px 0px 1px inset;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      .pcImage {
+        img {
+          width: 100%;
+          height: auto;
+          margin: 0 0 0.5rem 0;
+          border-radius: 0.5rem;
+        }
+      }
+      .pillarContent {
+        padding: 0.5rem 0.5rem 0 0.5rem;
+        h4 {
+          color: $white;
+          padding: 0.2rem 0;
+          background-color: $black;
+          margin: 0 0 0.5rem 0;
+          text-align: center;
+          border-radius: 0.5rem;
+        }
+        p {
+          text-align: justify;
+          color: $black2;
+        }
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .pillars {
+    .pillarsContainer {
+      flex-direction: column;
+
+      .pillarContainerChild {
+        width: 100%;
+        margin: 0 0 2rem 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .pillars {
+    .pillarsContainer {
+      flex-direction: column;
+
+      .pillarContainerChild {
+        width: 100%;
+        margin: 0 0 2rem 0;
+      }
+    }
+  }
+}

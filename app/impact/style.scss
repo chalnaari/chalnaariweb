@@ -1,0 +1,197 @@
+// color variables
+$pink: #b7029f;
+$white: #fff;
+$black: #171717;
+$black2: #2e2e2e;
+$grey: #d3d3d3;
+$yellow: #fce205;
+
+// font size variables
+$a: 1.1rem;
+$h1: 2rem;
+$h2: 1.8rem;
+$h3: 1.5rem;
+$h4: 1.3rem;
+
+.impact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 0 2rem 0;
+
+  .impactMIcons {
+    margin: 0 0 -0.15rem 0;
+  }
+
+  .impactHeader {
+    background-image: url(../../public/impactHeader.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 15rem;
+    margin: 0 0 2rem 0;
+    padding: 1rem 0 0 0;
+
+    h1 {
+      color: $white;
+      font-size: $h1;
+      font-weight: 600;
+    }
+  }
+
+  .impactContainer {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+      color: $black2;
+      font-size: $a;
+      margin: 0 0 1rem 0;
+      text-align: justify;
+    }
+
+    .impactMetricsContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0 0 4rem 0;
+
+      .border-bottom {
+        width: 100%;
+        border-bottom: 1px solid $grey;
+        margin: 1rem 0 1rem 0;
+      }
+
+      .impactMetricsBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 6rem;
+
+        .impactMBoxLeft {
+          width: 15%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          height: 100%;
+          background-color: $black2;
+          border-radius: 0.2rem;
+
+          p {
+            margin: 0;
+            color: $white;
+          }
+        }
+        .impactMBoxRight {
+          width: 84%;
+          height: 100%;
+          padding: 0.5rem;
+          border-radius: 0.2rem;
+          border: 1px solid $black2;
+
+          h3 {
+            color: $black;
+            font-weight: 600;
+          }
+          p {
+            color: $black2;
+          }
+        }
+      }
+    }
+
+    .impactVisuals {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+
+      .iVHeader {
+        h2 {
+          font-weight: 600;
+          color: $black;
+          margin: 0 0 1rem 0;
+        }
+      }
+
+      .iVBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .iVBoxChild {
+          width: 24.5%;
+          margin: 0 0 0.3rem 0;
+          border-radius: 0.4rem;
+
+          &:hover {
+            transform: scale(1.5);
+            transition: 0.3s;
+
+            img {
+              border-radius: 0;
+            }
+          }
+
+          img {
+            border-radius: 0.2rem;
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .impact {
+    .impactContainer {
+      width: 90%;
+
+      .impactMetricsContainer {
+        .border-bottom {
+          display: none;
+        }
+        .impactMetricsBox {
+          margin: 0 0 1rem 0;
+          height: auto;
+          flex-direction: column;
+          .impactMBoxLeft {
+            width: 100%;
+          }
+          .impactMBoxRight {
+            width: 100%;
+          }
+        }
+      }
+
+      .impactVisuals {
+        .iVBox {
+          flex-direction: column;
+
+          .iVBoxChild {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

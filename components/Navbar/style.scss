@@ -1,0 +1,313 @@
+// color variables
+$pink: #b7029f;
+$white: #fff;
+$black: #171717;
+$black2: #2e2e2e;
+$grey: #d3d3d3;
+$yellow: #fce205;
+
+// font size variables
+$a: 1.1rem;
+$h1: 2rem;
+$h2: 1.8rem;
+$h3: 1.5rem;
+$h4: 1.3rem;
+
+header {
+  .navbar-bg {
+    background-color: $white;
+    border-bottom: 1px solid $grey;
+    height: 3rem;
+
+    .logo {
+      img {
+        width: 5rem;
+        height: auto;
+      }
+    }
+
+    .mainMenu {
+      ul {
+        li {
+          color: $black2;
+          padding: 0.2rem;
+
+          .homeIcon {
+            color: $black2;
+          }
+          a {
+            color: $black2;
+          }
+
+          .dropdown {
+            background-color: $white;
+            margin: 0.5rem 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.1rem 1rem;
+  // border-bottom: 1px solid $grey;
+  position: fixed;
+  // background: white;
+  background: transparent;
+  z-index: 999;
+  height: 5rem;
+  transition: 0.3s;
+
+  .logo {
+    width: 10%;
+    img {
+      width: 10rem;
+      height: auto;
+    }
+  }
+
+  .mainMenu {
+    width: 80%;
+
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      li {
+        // position: relative;
+        margin: 0 1rem 0 1rem;
+        font-size: $a;
+        color: $white;
+        font-weight: 500;
+        padding: 0.2rem 0.2rem 1rem 0.2rem;
+
+        cursor: pointer;
+
+        .homeIcon {
+          margin: 0 0 -0.3rem 0;
+          font-size: $h4;
+          color: $white;
+        }
+
+        .mainMenuIcon {
+          margin: 0 0 -0.3rem 0;
+        }
+
+        .dropdown {
+          // flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+            rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          padding: 1rem;
+          width: 100vw;
+          background-color: #f8f8ff;
+          margin: 1rem 0 0 0;
+          z-index: 9999;
+          left: 50%;
+          transform: translateX(-50%);
+
+          li {
+            padding: 0.5rem;
+            margin: 0 1rem 0 1rem;
+            // box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+            // box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+            //   rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+              rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            border: 1px solid $white;
+            border-radius: 0.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .dropdownIcon {
+              padding: 1rem;
+              font-size: 5rem;
+              // border: 2px solid $pink;
+              background-color: $pink;
+              font-weight: 100;
+              border-radius: 50%;
+              color: $white;
+            }
+
+            a {
+              margin: -1rem 0 0 0;
+              color: $pink;
+            }
+
+            p {
+              text-align: center;
+              color: $black2;
+              font-size: 0.8rem;
+
+              &:hover {
+                color: $black2;
+                text-decoration: none;
+              }
+            }
+
+            &:hover {
+              border: 1px solid $pink;
+              transition: 0.3s;
+            }
+          }
+        }
+        &:hover {
+          .dropdown {
+            visibility: visible;
+            opacity: 1;
+            transition: 0.5s;
+          }
+        }
+
+        // &:hover {
+        //   color: $pink;
+        //   transition: 0.3s ease-in-out;
+        // }
+
+        a {
+          text-decoration: none;
+          font-size: $a;
+          color: $white;
+          font-weight: 500;
+          padding: 0.2rem;
+
+          // &:hover {
+          //   color: $pink;
+          //   transition: 0.3s ease-in-out;
+          // }
+        }
+      }
+    }
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  header {
+    .navbar-bg {
+      .mobileMenu {
+        .mButton {
+          color: $black;
+        }
+      }
+    }
+  }
+  .navbar {
+    padding: 0.5rem 1rem;
+
+    .logo {
+      img {
+        width: 8rem;
+        height: auto;
+      }
+    }
+    .mainMenu {
+      display: none;
+    }
+    .mobileMenu {
+      display: block;
+
+      .mButton {
+        font-size: 2.2rem;
+        background: transparent;
+        border: none;
+        color: $white;
+      }
+
+      .mMenu {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        right: 0;
+        width: 100%;
+        background-color: $white;
+        overflow: hidden;
+        // display: none;
+        padding: 0.5rem;
+        height: 100vh;
+
+        .border-bottom {
+          border-bottom: 1px solid $grey;
+          margin: 0.5rem 0 0.5rem 0;
+        }
+
+        li {
+          font-weight: 500;
+          font-size: $a;
+          color: $black;
+          .mDropDownIcon {
+            margin: 0 0 -0.18rem 0 !important;
+          }
+          .mMenuIcons {
+            margin: 0 0.5rem -0.18rem 0;
+            color: $pink;
+          }
+
+          a {
+            color: $black;
+            font-weight: 500;
+            font-size: $a;
+          }
+
+          .mDropDown {
+            margin: 0.2rem 0 0 1.8rem;
+            li {
+              margin: 0 0 0.3rem 0;
+              a {
+                color: $black2;
+                font-weight: 400;
+              }
+
+              .mDropMenuIcons {
+                margin: 0 0.3rem -0.15rem 0;
+                color: $black;
+              }
+            }
+          }
+        }
+      }
+      .showMenu {
+        // display: block;
+        left: 0;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .mainMenu {
+    display: none;
+  }
+}
+
+@keyframes mAnime {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

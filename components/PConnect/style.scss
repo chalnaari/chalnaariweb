@@ -1,0 +1,130 @@
+// color variables
+$pink: #b7029f;
+$white: #fff;
+$black: #171717;
+$black2: #2e2e2e;
+$grey: #d3d3d3;
+$yellow: #fce205;
+
+// font size variables
+$a: 1.1rem;
+$h1: 2rem;
+$h2: 1.8rem;
+$h3: 1.5rem;
+$h4: 1.3rem;
+
+.pConnect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 0 4rem 0;
+
+  .pConnectContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    max-width: 1200px;
+    background-color: $yellow;
+    padding: 2rem 0;
+    border-radius: 0.5rem;
+
+    .pConnectLeft {
+      width: 40%;
+
+      h2 {
+        color: $black2;
+        margin: 0 0 0.5rem 0;
+        font-size: $h2;
+        text-transform: lowercase;
+      }
+
+      p {
+        color: $black2;
+      }
+    }
+
+    .pConnectRight {
+      width: 20%;
+
+      .pConnectBtn {
+        background-color: $black;
+        padding: 0.3rem 1rem;
+        color: $white;
+        font-size: $a;
+        cursor: pointer;
+        border: 1px solid $black;
+        border-radius: 0.2rem;
+
+        &:hover {
+          background-color: $white;
+          color: $black;
+          transform: scale(1.1);
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .pConnect {
+    .pConnectContainer {
+      flex-direction: column;
+      padding: 2rem 0.5rem 2rem 0.5rem;
+
+      .pConnectLeft {
+        width: 100%;
+        margin: 0 0 1rem 0;
+
+        h2 {
+          font-size: $h3;
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+      .pConnectRight {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .pConnect {
+    .pConnectContainer {
+      flex-direction: column;
+      padding: 2rem 0.5rem 2rem 0.5rem;
+
+      .pConnectLeft {
+        width: 100%;
+        margin: 0 0 1rem 0;
+
+        h2 {
+          font-size: $h3;
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+      .pConnectRight {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.imageTab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  .imageTabContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+    .imageTabContainerChild1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .imageTabImage {
+        width: 25%;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

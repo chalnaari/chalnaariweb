@@ -1,0 +1,106 @@
+// color variables
+$pink: #b7029f;
+$white: #fff;
+$black: #171717;
+$black2: #2e2e2e;
+$grey: #d3d3d3;
+$yellow: #fce205;
+
+// font size variables
+$a: 1.1rem;
+$h1: 2rem;
+$h2: 1.8rem;
+$h3: 1.5rem;
+$h4: 1.3rem;
+
+.calTable {
+  table {
+    border: 1px solid $grey;
+    border-radius: 0.2rem;
+    padding: 0.1rem;
+    width: 100%;
+    margin: 0 0 1rem 0;
+
+    tr {
+      th {
+        border: 1px solid $grey;
+        border-radius: 0.2rem;
+        padding: 0.5rem;
+        font-weight: 500;
+        text-align: center;
+      }
+      td {
+        border: 1px solid $grey;
+        border-radius: 0.2rem;
+        text-align: center;
+        padding: 0.5rem 0.8rem;
+      }
+      .grey-d {
+        color: $grey;
+      }
+      .noida-d {
+        background-color: #ff1493;
+        color: $white;
+      }
+      .delhi-d {
+        background-color: #800080;
+        color: $white;
+      }
+      .ghaziabad-d {
+        background-color: #101010;
+        color: $white;
+      }
+      .faridabad-d {
+        background-color: #cc0000;
+        color: $white;
+      }
+      .gurugram-d {
+        background-color: #008080;
+        color: $white;
+      }
+    }
+  }
+}
+
+.donateCalendar {
+  width: 100%;
+  .selectDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .selectMonth {
+      margin: 0 0 1rem 0;
+      width: 49%;
+      select {
+        padding: 0.5rem;
+        outline: none;
+        border: 1px solid $black2;
+        border-radius: 0.2rem;
+        font-size: $a;
+        width: 100%;
+      }
+    }
+
+    .selectLocation {
+      width: 49%;
+      margin: 0 0 1rem 0;
+      select {
+        padding: 0.5rem;
+        outline: none;
+        border: 1px solid $black2;
+        border-radius: 0.2rem;
+        font-size: $a;
+        width: 100%;
+      }
+    }
+  }
+
+  .availableDates {
+    display: none;
+  }
+
+  .availableDatesShow {
+    display: block;
+  }
+}

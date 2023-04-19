@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+// color variables
+$pink: #b7029f;
+$white: #fff;
+$black: #171717;
+$black2: #2e2e2e;
+$grey: #d3d3d3;
+$yellow: #fce205;
+
+// font size variables
+$a: 1.1rem;
+$h1: 2rem;
+$h2: 1.8rem;
+$h3: 1.5rem;
+$h4: 1.3rem;
+
+.connect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  .connectContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid $grey;
+    border-top: 1px solid $grey;
+    padding: 2rem 0 2rem 0;
+    width: 80%;
+    max-width: 1200px;
+
+    .connectLeft {
+      width: 48%;
+      background-color: $pink;
+      padding: 1rem 1rem 1rem 2rem;
+      border-radius: 0.5rem;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+      .connectLeftBox {
+        h4 {
+          margin: 0 0 1.5rem 0;
+          color: $white;
+          font-weight: 500;
+          font-size: $h2;
+          //   text-transform: lowercase;
+          font-family: "Caveat", cursive;
+        }
+
+        .cLBoxPara1 {
+          color: $white;
+          font-size: $h3;
+          font-weight: 500;
+          margin: 0 0 1rem 0;
+        }
+
+        .cLBoxPara2 {
+          color: $white;
+          font-size: $h4;
+          font-weight: 500;
+          margin: 0 0 2rem 0;
+        }
+
+        button {
+          background-color: $white;
+          color: $black2;
+          border: none;
+          padding: 0.3rem 1rem;
+          font-size: $a;
+          border-radius: 0.2rem;
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+          }
+        }
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+      }
+    }
+
+    .connectRight {
+      width: 48%;
+      background-color: $yellow;
+      padding: 1rem 1rem 1rem 2rem;
+      border-radius: 0.5rem;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+      .connectRightBox {
+        h4 {
+          margin: 0 0 1.5rem 0;
+          color: $black2;
+          font-size: $h2;
+          font-weight: 500;
+          //   text-transform: lowercase;
+          font-family: "Caveat", cursive;
+        }
+
+        .cRBoxPara1 {
+          color: $black2;
+          font-size: $h3;
+          font-weight: 500;
+          margin: 0 0 1rem 0;
+        }
+
+        .cRBoxPara2 {
+          color: $black2;
+          font-size: $h4;
+          font-weight: 500;
+          margin: 0 0 2rem 0;
+        }
+
+        button {
+          background-color: $black2;
+          border-radius: 0.2rem;
+          cursor: pointer;
+          color: $white;
+          border: none;
+          padding: 0.3rem 1rem;
+          font-size: $a;
+
+          &:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+          }
+        }
+      }
+      &:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .connect {
+    .connectContainer {
+      flex-direction: column;
+
+      .connectLeft {
+        width: 100%;
+        margin: 0 0 2rem 0;
+
+        .connectLeftBox {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          h4 {
+            text-align: center;
+          }
+
+          .cLBoxPara1 {
+            text-align: center;
+            font-size: $h4;
+          }
+          .cLBoxPara2 {
+            text-align: center;
+          }
+        }
+      }
+      .connectRight {
+        width: 100%;
+
+        .connectRightBox {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          h4 {
+            text-align: center;
+          }
+
+          .cRBoxPara1 {
+            text-align: center;
+            font-size: $h4;
+          }
+          .cRBoxPara2 {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .connect {
+    .connectContainer {
+      flex-direction: column;
+
+      .connectLeft {
+        width: 100%;
+        margin: 0 0 2rem 0;
+
+        .connectLeftBox {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          h4 {
+            text-align: center;
+          }
+
+          .cLBoxPara1 {
+            text-align: center;
+          }
+          .cLBoxPara2 {
+            text-align: center;
+          }
+        }
+      }
+      .connectRight {
+        width: 100%;
+
+        .connectRightBox {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          h4 {
+            text-align: center;
+          }
+
+          .cRBoxPara1 {
+            text-align: center;
+          }
+          .cRBoxPara2 {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

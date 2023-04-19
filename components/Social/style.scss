@@ -1,0 +1,110 @@
+// color variables
+$pink: #b7029f;
+$white: #fff;
+$black: #171717;
+$black2: #2e2e2e;
+$grey: #d3d3d3;
+$yellow: #fce205;
+
+// font size variables
+$a: 1.1rem;
+$h1: 2rem;
+$h2: 1.8rem;
+$h3: 1.5rem;
+$h4: 1.3rem;
+
+.socialSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem 0 4rem 0;
+
+  .socialSectionHead {
+    width: 80%;
+
+    h2 {
+      text-align: center;
+      color: $black2;
+      font-size: $h2;
+      font-weight: 500;
+
+      padding: 0 0 1rem 0;
+      border-bottom: 1px solid $grey;
+
+      span {
+        color: $pink;
+      }
+    }
+  }
+
+  .socialSContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 1200px;
+
+    .socialSChild {
+      h4 {
+        font-size: $h2;
+        a {
+          color: $black2;
+          opacity: 0.8;
+        }
+
+        .socialSFacebook {
+          &:hover {
+            color: #0165e1;
+            transition: 0.5s;
+          }
+        }
+        .socialSTwitter {
+          &:hover {
+            color: #1da1f2;
+            transition: 0.5s;
+          }
+        }
+        .socialSLinkedin {
+          &:hover {
+            color: #0a66c2;
+            transition: 0.5s;
+          }
+        }
+        .socialSInstagram {
+          &:hover {
+            color: #e95950;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .socialSection {
+    .socialSContainer {
+      flex-direction: column;
+      margin: 0;
+
+      .socialSChild {
+        margin: 0 0 1rem 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .socialSection {
+    .socialSContainer {
+      flex-direction: column;
+      margin: 0;
+
+      .socialSChild {
+        margin: 0 0 1rem 0;
+      }
+    }
+  }
+}

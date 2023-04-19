@@ -1,0 +1,332 @@
+// color variables
+$pink: #b7029f;
+$white: #fff;
+$black: #171717;
+$black2: #2e2e2e;
+$grey: #d3d3d3;
+$yellow: #fce205;
+
+// font size variables
+$a: 1.1rem;
+$h1: 2rem;
+$h2: 1.8rem;
+$h3: 1.5rem;
+$h4: 1.3rem;
+
+.aboutPillarIcons {
+  margin: 0 0 -0.2rem;
+}
+
+.margin-more {
+  margin: 0 0 3rem 0 !important;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 0 2rem 0;
+
+  .aboutHeader {
+    background-image: url(../../public/aboutHeader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 3rem 0;
+    padding: 4rem 0 0 0;
+
+    h1 {
+      color: $white;
+      font-weight: 500;
+      font-size: $h2;
+    }
+  }
+
+  .aboutContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1200px;
+
+    p {
+      color: $black2;
+      text-align: justify;
+      margin: 0 0 1rem 0;
+    }
+
+    .aboutContainerPillar1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 0 0 1rem 0;
+      border: 1px solid $grey;
+      border-radius: 0.5rem;
+      padding: 1rem;
+
+      .acp1Left {
+        width: 70%;
+
+        h2 {
+          font-size: $h4;
+          color: $black2;
+          margin: 0 0 0.5rem 0;
+          font-weight: 600;
+        }
+
+        p {
+          color: $black2;
+        }
+      }
+
+      .acp1Right {
+        width: 28%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        img {
+          width: 100%;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+    .aboutContainerPillar2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 0 0 1rem 0;
+      border: 1px solid $grey;
+      border-radius: 0.5rem;
+      padding: 1rem;
+
+      .acp2Left {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 28%;
+
+        img {
+          width: 100%;
+          border-radius: 0.5rem;
+        }
+      }
+
+      .acp2Right {
+        width: 70%;
+
+        h2 {
+          font-size: $h4;
+          color: $black2;
+          margin: 0 0 0.5rem 0;
+          font-weight: 600;
+        }
+
+        p {
+          color: $black2;
+        }
+      }
+    }
+    .aboutContainerPillar3 {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 0 0 1rem 0;
+      border: 1px solid $grey;
+      border-radius: 0.5rem;
+      padding: 1rem;
+
+      .acp3Left {
+        width: 70%;
+
+        h2 {
+          font-size: $h4;
+          color: $black2;
+          margin: 0 0 0.5rem 0;
+          font-weight: 600;
+        }
+
+        p {
+          color: $black2;
+        }
+      }
+
+      .acp3Right {
+        width: 28%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        img {
+          width: 100%;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+    .aboutContainerPillar4 {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 0 0 2rem 0;
+      border: 1px solid $grey;
+      border-radius: 0.5rem;
+      padding: 1rem;
+
+      .acp4Left {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 28%;
+
+        img {
+          width: 100%;
+          border-radius: 0.5rem;
+        }
+      }
+
+      .acp4Right {
+        width: 70%;
+
+        h2 {
+          font-size: $h4;
+          color: $black2;
+          margin: 0 0 0.5rem 0;
+          font-weight: 600;
+        }
+
+        p {
+          color: $black2;
+        }
+      }
+    }
+
+    .aboutMissionVision {
+      border: 1px solid $grey;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      h2 {
+        font-size: $h4;
+        color: $black2;
+        font-weight: 600;
+        margin: 0 0 0.5rem 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .about {
+    .aboutHeader {
+      height: 30vh;
+      margin: 0 0 1rem 0;
+    }
+    .aboutContainer {
+      width: 90%;
+      .aboutContainerPillar1 {
+        flex-direction: column;
+
+        .acp1Left {
+          width: 100%;
+        }
+        .acp1Right {
+          width: 100%;
+        }
+      }
+
+      .aboutContainerPillar2 {
+        flex-direction: column-reverse;
+        .acp2Left {
+          width: 100%;
+        }
+        .acp2Right {
+          width: 100%;
+        }
+      }
+
+      .aboutContainerPillar3 {
+        flex-direction: column;
+
+        .acp3Left {
+          width: 100%;
+        }
+        .acp3Right {
+          width: 100%;
+        }
+      }
+
+      .aboutContainerPillar4 {
+        flex-direction: column-reverse;
+
+        .acp4Left {
+          width: 100%;
+        }
+        .acp4Right {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .about {
+    .aboutContainer {
+      .aboutHeader {
+        height: 30vh;
+        margin: 0 0 1rem 0 !important;
+      }
+
+      .aboutContainerPillar1 {
+        flex-direction: column;
+
+        .acp1Left {
+          width: 100%;
+        }
+        .acp1Right {
+          width: 100%;
+        }
+      }
+
+      .aboutContainerPillar2 {
+        flex-direction: column;
+        .acp2Left {
+          width: 100%;
+        }
+        .acp2Right {
+          width: 100%;
+        }
+      }
+
+      .aboutContainerPillar3 {
+        flex-direction: column;
+
+        .acp3Left {
+          width: 100%;
+        }
+        .acp3Right {
+          width: 100%;
+        }
+      }
+
+      .aboutContainerPillar4 {
+        flex-direction: column;
+
+        .acp4Left {
+          width: 100%;
+        }
+        .acp4Right {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

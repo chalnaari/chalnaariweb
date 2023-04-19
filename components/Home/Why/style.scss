@@ -1,0 +1,162 @@
+// color variables
+$pink: #b7029f;
+$white: #fff;
+$black: #171717;
+$black2: #2e2e2e;
+$grey: #d3d3d3;
+$yellow: #fce205;
+
+// font size variables
+$a: 1.1rem;
+$h1: 2rem;
+$h2: 1.8rem;
+$h3: 1.5rem;
+$h4: 1.3rem;
+
+.why {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 0 4rem 0;
+
+  .whyHead {
+    width: 80%;
+    max-width: 1200px;
+
+    h2 {
+      text-align: center;
+      color: $black2;
+      text-transform: lowercase;
+      font-size: $h2;
+      margin: 0 0 1rem 0;
+      border-bottom: 1px solid $grey;
+    }
+  }
+
+  .whyContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 80%;
+    max-width: 1200px;
+
+    .whyRight {
+      width: 55%;
+
+      .whyRightContent {
+        p {
+          text-align: justify;
+          margin: 0 0 1rem 0;
+          color: $black2;
+        }
+        .whySectionQuote {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+
+          .whyQuoteIcon {
+            color: $pink;
+            font-size: 4rem;
+            width: 5%;
+          }
+          .whyQuote {
+            width: 88%;
+            text-shadow: 0px 2px 5px rgba(183, 2, 159, 0.56);
+          }
+        }
+      }
+    }
+    .whyLeft {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      overflow: hidden;
+      // border: 1px solid;
+
+      .whyLeftImage {
+        img {
+          width: 18rem;
+          height: auto;
+          filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .why {
+    .whyContainer {
+      flex-direction: column-reverse;
+
+      .whyRight {
+        width: 100%;
+        margin: 0 0 2rem 0;
+
+        .whyRightContent {
+          .whySectionQuote {
+            flex-direction: column;
+
+            .whyQuoteIcon {
+              width: 100%;
+              padding: 0;
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              margin: 0 0 -3rem 0;
+              opacity: 0.3;
+            }
+            .whyQuote {
+              font-size: $h3;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .whyLeft {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .why {
+    .whyContainer {
+      flex-direction: column-reverse;
+
+      .whyRight {
+        width: 100%;
+        margin: 0 0 2rem 0;
+
+        .whyRightContent {
+          .whySectionQuote {
+            flex-direction: column;
+
+            .whyQuoteIcon {
+              width: 100%;
+              padding: 0;
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              margin: 0 0 -3rem 0;
+              opacity: 0.3;
+            }
+            .whyQuote {
+              font-size: $h3;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .whyLeft {
+        width: 100%;
+      }
+    }
+  }
+}

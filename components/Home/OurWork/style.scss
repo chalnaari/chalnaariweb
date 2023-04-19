@@ -1,0 +1,110 @@
+// color variables
+$pink: #b7029f;
+$white: #fff;
+$black: #171717;
+$black2: #2e2e2e;
+$grey: #d3d3d3;
+$yellow: #fce205;
+
+// font size variables
+$a: 1.1rem;
+$h1: 2rem;
+$h2: 1.8rem;
+$h3: 1.5rem;
+$h4: 1.3rem;
+
+.ourWork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4rem 0;
+
+  .ourWorkHead {
+    width: 80%;
+    max-width: 1200px;
+
+    h2 {
+      text-align: center;
+      margin: 0 0 1rem 0;
+      border-bottom: 1px solid $grey;
+      color: $black2;
+      text-transform: lowercase;
+      font-size: $h2;
+    }
+  }
+
+  .ourWorkContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+
+    .ourWorkCChild {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      width: 24%;
+
+      border: 1px solid $grey;
+      height: 8rem;
+      padding: 1rem;
+      cursor: pointer;
+      border-radius: 0.2rem;
+
+      .owcContent {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+        top: 25%;
+        color: $black2;
+        h4 {
+          text-align: center;
+          text-transform: lowercase;
+          font-weight: 550;
+        }
+
+        &:hover {
+          color: $black;
+          transition: 0.3s;
+        }
+      }
+
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+          rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+        border: 1px solid $black2;
+        transform: scale(1.05);
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .ourWork {
+    .ourWorkContainer {
+      flex-direction: column;
+
+      .ourWorkCChild {
+        width: 100%;
+        margin: 0 0 1rem 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .ourWork {
+    .ourWorkContainer {
+      flex-direction: column;
+
+      .ourWorkCChild {
+        width: 100%;
+        margin: 0 0 1rem 0;
+      }
+    }
+  }
+}

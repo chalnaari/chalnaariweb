@@ -1,0 +1,104 @@
+// color variables
+$pink: #b7029f;
+$white: #fff;
+$black: #171717;
+$black2: #2e2e2e;
+$grey: #d3d3d3;
+$yellow: #fce205;
+
+// font size variables
+$a: 1.1rem;
+$h1: 2rem;
+$h2: 1.8rem;
+$h3: 1.5rem;
+$h4: 1.3rem;
+
+.dButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 0 4rem 0;
+
+  .dButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    width: 50%;
+
+    .dbLeft {
+      background-color: $black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      a {
+        padding: 1rem 2rem;
+        font-size: $a;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+      }
+    }
+
+    .dbRight {
+      background-color: $yellow;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+
+      a {
+        padding: 1rem 2rem;
+        color: $black;
+        font-size: $a;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .dButton {
+    .dButtonContainer {
+      flex-direction: column;
+      width: 80%;
+
+      .dbLeft {
+        width: 100%;
+        margin: 0 0 1rem 0;
+      }
+      .dbRight {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .dButton {
+    .dButtonContainer {
+      flex-direction: column;
+      width: 80%;
+
+      .dbLeft {
+        width: 100%;
+        margin: 0 0 1rem 0;
+      }
+      .dbRight {
+        width: 100%;
+      }
+    }
+  }
+}

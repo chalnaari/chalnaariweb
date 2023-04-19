@@ -1,0 +1,208 @@
+// color variables
+$pink: #b7029f;
+$white: #fff;
+$black: #171717;
+$black2: #2e2e2e;
+$grey: #d3d3d3;
+$yellow: #fce205;
+
+// font size variables
+$a: 1.1rem;
+$h1: 2rem;
+$h2: 1.8rem;
+$h3: 1.5rem;
+$h4: 1.3rem;
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  .contactHeader {
+    background-image: url(../../public/contactHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 2rem 0;
+
+    height: 30vh;
+    padding: 4rem 0 0 0;
+    width: 100%;
+
+    h1 {
+      color: $white;
+      font-size: $h2;
+      font-weight: 500;
+    }
+  }
+
+  .contactContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 0 2rem 0;
+
+    .ccLeft {
+      width: 50%;
+      h2 {
+        margin: 0 0 1rem 0;
+        color: $black2;
+        font-weight: 500;
+        font-size: $h3;
+      }
+      h3 {
+        margin: 0 0 0.2rem 0;
+        color: $black2;
+        font-weight: 600;
+      }
+      p {
+        margin: 0 0 1rem 0;
+        color: $black2;
+        text-align: justify;
+
+        a {
+          color: $pink;
+        }
+      }
+
+      .contactSocial {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .cSocialChild {
+          margin: 0 1rem 0 0;
+          a {
+            color: $black;
+            font-size: $h2;
+          }
+        }
+      }
+    }
+
+    .ccRight {
+      width: 40%;
+
+      form {
+        width: 100%;
+        margin: 0 0 2rem 0;
+
+        input {
+          width: 100%;
+          border: 1px solid $grey;
+          padding: 0.5rem;
+          font-size: $a;
+          margin: 0 0 1rem 0;
+          border-radius: 0.2rem;
+          outline: none;
+        }
+
+        select {
+          width: 100%;
+          border: 1px solid $grey;
+          padding: 0.5rem;
+          font-size: $a;
+          margin: 0 0 1rem 0;
+          border-radius: 0.2rem;
+          outline: none;
+          color: grey;
+        }
+
+        textarea {
+          width: 100%;
+          border: 1px solid $grey;
+          padding: 0.5rem;
+          font-size: $a;
+          margin: 0 0 1rem 0;
+          border-radius: 0.2rem;
+          outline: none;
+          resize: none;
+        }
+
+        button {
+          padding: 0.5rem;
+          width: 100%;
+          border: 1px solid $grey;
+          border-radius: 0.2rem;
+          cursor: pointer;
+          background-color: $yellow;
+          color: $black;
+          font-size: $a;
+
+          &:hover {
+            background-color: $black;
+            color: $white;
+            transition: 0.3s;
+          }
+        }
+      }
+
+      p {
+        margin: 0 0 1rem 0;
+        color: $black2;
+        text-align: justify;
+      }
+    }
+  }
+
+  .contactThanks {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 0 2rem 0;
+
+    p {
+      margin: 0 0 1rem 0;
+      color: $black2;
+      text-align: justify;
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .contact {
+    .contactContainer {
+      width: 90%;
+
+      flex-direction: column-reverse;
+
+      .ccLeft {
+        width: 100%;
+      }
+      .ccRight {
+        width: 100%;
+      }
+    }
+
+    .contactThanks {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .contact {
+    .contactContainer {
+      width: 90%;
+
+      flex-direction: column-reverse;
+
+      .ccLeft {
+        width: 100%;
+      }
+      .ccRight {
+        width: 100%;
+      }
+    }
+
+    .contactThanks {
+      display: none;
+    }
+  }
+}

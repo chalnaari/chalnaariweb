@@ -1,0 +1,78 @@
+// color variables
+$pink: #b7029f;
+$white: #fff;
+$black: #171717;
+$black2: #2e2e2e;
+$grey: #d3d3d3;
+$yellow: #fce205;
+
+// font size variables
+$a: 1.1rem;
+$h1: 2rem;
+$h2: 1.8rem;
+$h3: 1.5rem;
+$h4: 1.3rem;
+
+form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .donateFormTab {
+    margin: 0 0 0.8rem 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .donateInputs {
+      width: 49%;
+      input {
+        padding: 0.2rem;
+        font-size: $a;
+        width: 100%;
+        outline: none;
+        border: 1px solid $grey;
+        border-radius: 0.2rem;
+      }
+
+      input[type="submit"] {
+        background-color: $yellow;
+        color: $black;
+        cursor: pointer;
+        border: none;
+
+        &:hover {
+          background-color: $black;
+          color: $white;
+          transition: 0.3s;
+        }
+      }
+
+      select {
+        padding: 0.3rem;
+        font-size: $a;
+        width: 100%;
+        outline: none;
+        border: 1px solid $grey;
+        border-radius: 0.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  form {
+    .donateFormTab {
+      margin: 0 !important;
+      flex-direction: column;
+
+      .donateInputs {
+        width: 100%;
+        margin: 0 0 1rem 0;
+      }
+    }
+  }
+}

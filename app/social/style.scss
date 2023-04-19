@@ -1,0 +1,297 @@
+// color variables
+$pink: #b7029f;
+$white: #fff;
+$black: #171717;
+$black2: #2e2e2e;
+$grey: #d3d3d3;
+$yellow: #fce205;
+
+// font size variables
+$a: 1.1rem;
+$h1: 2rem;
+$h2: 1.8rem;
+$h3: 1.5rem;
+$h4: 1.3rem;
+
+//#1778F2 facebook
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  margin: 0 0 2rem 0;
+
+  .socialHeader {
+    height: 20vh;
+    padding: 4rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background: rgb(29, 161, 242);
+    background: linear-gradient(
+      80deg,
+      rgba(29, 161, 242, 0.7204131652661064) 26%,
+      rgba(1, 101, 225, 0.7904411764705882) 53%
+    );
+    margin: 0 0 2rem 0;
+
+    h1 {
+      color: $white;
+      font-size: $h2;
+      font-weight: 600;
+    }
+  }
+
+  .socialContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1200px;
+
+    .socialFollow {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 0 2rem 0;
+
+      .socialFacebook {
+        width: 49%;
+        background-color: #1778f2;
+        border-radius: 0.5rem;
+        padding: 1rem;
+
+        h2 {
+          font-weight: 600;
+          color: $white;
+        }
+        h3 {
+          font-weight: 600;
+          color: $white;
+          margin: 0 0 0.5rem 0;
+        }
+        p {
+          color: $white;
+          font-size: 0.9rem;
+          text-align: justify;
+          margin: 0 0 0.5rem 0;
+        }
+
+        .facebookFollowBtn {
+          margin: 1rem 0 0 0;
+          a {
+            background-color: $white;
+            color: #1778f2;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.2rem;
+            font-size: $a;
+
+            .followIcon {
+              margin: 0 0 -0.15rem 0;
+            }
+          }
+        }
+      }
+
+      .socialTwitter {
+        width: 49%;
+        background-color: #00acee;
+        border-radius: 0.5rem;
+        padding: 1rem;
+
+        h2 {
+          font-weight: 600;
+          color: $white;
+        }
+        h3 {
+          font-weight: 600;
+          color: $white;
+          margin: 0 0 0.5rem 0;
+        }
+        p {
+          color: $white;
+          font-size: 0.9rem;
+          text-align: justify;
+          margin: 0 0 0.5rem 0;
+        }
+
+        .twitterFollowBtn {
+          margin: 1rem 0 0 0;
+          a {
+            background-color: $white;
+            color: #00acee;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.2rem;
+            font-size: $a;
+
+            .followIcon {
+              margin: 0 0 -0.15rem 0;
+            }
+          }
+        }
+      }
+    }
+
+    .socialFollow2 {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .socialInsta {
+        width: 49%;
+
+        background: #d6249f;
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0%,
+          #fdf497 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
+        border-radius: 0.5rem;
+        padding: 1rem;
+
+        h2 {
+          font-weight: 600;
+          color: $white;
+        }
+        h3 {
+          font-weight: 600;
+          color: $white;
+          margin: 0 0 0.5rem 0;
+        }
+        p {
+          color: $white;
+          font-size: 0.9rem;
+          text-align: justify;
+          margin: 0 0 0.5rem 0;
+        }
+
+        .instaFollowBtn {
+          margin: 1rem 0 0 0;
+          a {
+            background-color: $white;
+            color: #e95950;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.2rem;
+            font-size: $a;
+
+            .followIcon {
+              margin: 0 0 -0.15rem 0;
+            }
+          }
+        }
+      }
+
+      .socialWhats {
+        width: 49%;
+
+        background-color: #25d366;
+        border-radius: 0.5rem;
+        padding: 1rem;
+
+        h2 {
+          font-weight: 600;
+          color: $white;
+        }
+        h3 {
+          font-weight: 600;
+          color: $white;
+          margin: 0 0 0.5rem 0;
+        }
+        p {
+          color: $white;
+          font-size: 0.9rem;
+          text-align: justify;
+          margin: 0 0 0.5rem 0;
+        }
+
+        .whatsFollowBtn {
+          margin: 1rem 0 0 0;
+          a {
+            background-color: $white;
+            color: #25d366;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.2rem;
+            font-size: $a;
+
+            .followIcon {
+              margin: 0 0 -0.15rem 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .social {
+    .socialContainer {
+      width: 90%;
+      .socialFollow {
+        flex-direction: column;
+        margin: 0 0 1rem 0;
+
+        .socialFacebook {
+          width: 100%;
+          margin: 0 0 1rem 0;
+        }
+        .socialTwitter {
+          width: 100%;
+        }
+      }
+
+      .socialFollow2 {
+        flex-direction: column;
+
+        .socialInsta {
+          width: 100%;
+          margin: 0 0 1rem 0;
+        }
+        .socialWhats {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .social {
+    .socialContainer {
+      width: 90%;
+      .socialFollow {
+        flex-direction: column;
+        margin: 0 0 1rem 0;
+
+        .socialFacebook {
+          width: 100%;
+          margin: 0 0 1rem 0;
+        }
+        .socialTwitter {
+          width: 100%;
+        }
+      }
+
+      .socialFollow2 {
+        flex-direction: column;
+
+        .socialInsta {
+          width: 100%;
+          margin: 0 0 1rem 0;
+        }
+        .socialWhats {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

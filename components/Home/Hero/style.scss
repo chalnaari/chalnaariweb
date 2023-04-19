@@ -1,0 +1,149 @@
+// color variables
+$pink: #b7029f;
+$white: #fff;
+$black: #171717;
+$black2: #2e2e2e;
+$grey: #d3d3d3;
+$yellow: #fce205;
+
+// font size variables
+$a: 1.1rem;
+$h1: 2rem;
+$h2: 1.8rem;
+$h3: 1.5rem;
+$h4: 1.3rem;
+
+.hero {
+  background-image: url(/herobg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 0 4rem 0;
+  height: 100vh;
+
+  .heroContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+
+    .heroContainerLeft {
+      width: 50%;
+
+      .heroCLeftContent {
+        color: $white;
+        h1 {
+          font-size: $h1;
+        }
+
+        h2 {
+          text-transform: lowercase;
+          font-size: $h3;
+          font-weight: 500;
+          margin: 0 0 1rem 0;
+        }
+
+        p {
+          font-weight: 400;
+          margin: 0 0 2rem 0;
+        }
+
+        .heroBtns {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          .heroBtn1 button {
+            padding: 0.3rem 1rem;
+            border: 1px solid $pink;
+            background-color: $pink;
+            color: $white;
+            font-size: $a;
+            border-radius: 0.2rem;
+            cursor: pointer;
+            margin: 0 1rem 0 0;
+
+            &:hover {
+              background-color: $white;
+              color: $pink;
+              transform: scale(1.1);
+              transition: 0.3s;
+
+              a {
+                color: $pink;
+              }
+            }
+          }
+
+          .heroBtn2 button {
+            cursor: pointer;
+            padding: 0.3rem 1rem;
+            border: 1px solid $yellow;
+            background-color: $yellow;
+            color: $black2;
+            font-size: $a;
+            border-radius: 0.2rem;
+
+            a {
+              color: $black;
+            }
+
+            &:hover {
+              border: 1px solid $black;
+              background-color: $black;
+              color: $white;
+              transform: scale(1.1);
+              transition: 0.3s;
+
+              a {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .heroContainerRight {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .hero {
+    height: 60vh;
+    width: 100%;
+    .heroContainer {
+      flex-direction: column;
+
+      .heroContainerLeft {
+        width: 100%;
+      }
+      .heroContainerRight {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    height: 60vh;
+    width: 100%;
+    .heroContainer {
+      flex-direction: column;
+
+      .heroContainerLeft {
+        width: 100%;
+      }
+      .heroContainerRight {
+        width: 100%;
+      }
+    }
+  }
+}
