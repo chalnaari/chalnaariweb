@@ -151,44 +151,44 @@ const page = () => {
           </div>
           <div className="iVBox">
             <div className="iVBoxChild">
-              <Image src={image1} />
+              <Image src={image1} alt="Impact 1" />
             </div>
             <div className="iVBoxChild">
-              <Image src={image2} />
+              <Image src={image2} alt="Impact 2" />
             </div>
             <div className="iVBoxChild">
-              <Image src={image3} />
+              <Image src={image3} alt="Impact 3" />
             </div>
             <div className="iVBoxChild">
-              <Image src={image4} />
-            </div>
-          </div>
-          <div className="iVBox">
-            <div className="iVBoxChild">
-              <Image src={image5} />
-            </div>
-            <div className="iVBoxChild">
-              <Image src={image6} />
-            </div>
-            <div className="iVBoxChild">
-              <Image src={image7} />
-            </div>
-            <div className="iVBoxChild">
-              <Image src={image8} />
+              <Image src={image4} alt="Impact 4" />
             </div>
           </div>
           <div className="iVBox">
             <div className="iVBoxChild">
-              <Image src={image9} />
+              <Image src={image5} alt="Impact 5" />
             </div>
             <div className="iVBoxChild">
-              <Image src={image10} />
+              <Image src={image6} alt="Impact 6" />
             </div>
             <div className="iVBoxChild">
-              <Image src={image11} />
+              <Image src={image7} alt="Impact 7" />
             </div>
             <div className="iVBoxChild">
-              <Image src={image12} />
+              <Image src={image8} alt="Impact 8" />
+            </div>
+          </div>
+          <div className="iVBox">
+            <div className="iVBoxChild">
+              <Image src={image9} alt="Impact 9" />
+            </div>
+            <div className="iVBoxChild">
+              <Image src={image10} alt="Impact 10" />
+            </div>
+            <div className="iVBoxChild">
+              <Image src={image11} alt="Impact 11" />
+            </div>
+            <div className="iVBoxChild">
+              <Image src={image12} alt="Impact 12" />
             </div>
           </div>
         </div>

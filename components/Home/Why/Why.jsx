@@ -13,7 +13,7 @@ const Why = () => {
       <div className="whyContainer">
         <div className="whyLeft">
           <div className="whyLeftImage">
-            <Image src={whyImage} />
+            <Image src={whyImage} alt="Why Image" />
           </div>
         </div>
         <div className="whyRight">

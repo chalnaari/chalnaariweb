@@ -70,7 +70,7 @@ const Donate = () => {
                   </span>
                   chalnaari@upi
                 </p>
-                <Image src={qr} className="qrImage" />
+                <Image src={qr} className="qrImage" alt="QR Code" />
               </div>
             </div>
             <div className="donationMRight">

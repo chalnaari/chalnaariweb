@@ -59,7 +59,7 @@ const About = () => {
             </div>
           </div>
           <div className="ascRight">
-            <Image src={aboutSection} />
+            <Image src={aboutSection} alt="About Image" />
             {/* <div className="ascRight1">
               <Image src={aboutSection1} />
             </div>

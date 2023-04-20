@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 import { RiLinksFill } from "react-icons/ri";
-import Link from "next/link";
+import a from "next/link";
 
 export const metadata = {
   title: "Initiatives - Chal Naari: Ashes To Re-birth",
@@ -265,13 +265,13 @@ const page = () => {
           <h2>Take Action Now</h2>
           <div className="initCTAContainer">
             <div className="initCTAChild">
-              <Link href="/">Donate</Link>
+              <a href="/donate">Donate</a>
             </div>
             <div className="initCTAChild">
-              <Link href="/">Volunteer</Link>
+              <a href="/volunteer">Volunteer</a>
             </div>
             <div className="initCTAChild">
-              <Link href="/">Join</Link>
+              <a href="/contact">Join</a>
             </div>
           </div>
         </div>

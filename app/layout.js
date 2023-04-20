@@ -2,6 +2,7 @@ import "./globals.scss";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
+import Script from "next/script";
 
 export const metadata = {
   title: "Chal Naari - Ashes To Re-birth",
@@ -14,6 +15,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-CKSQY5XSP8"
+      ></Script>
+      <Script>
+        {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CKSQY5XSP8');`}
+      </Script>
       <body>
         <ScrollToTop />
         <Navbar />

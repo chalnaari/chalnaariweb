@@ -68,12 +68,12 @@ const About = () => {
             </p>
           </div>
           <div className="acp1Right">
-            <Image src={pillar1} />
+            <Image src={pillar1} alt="Pillar 1" />
           </div>
         </div>
         <div className="aboutContainerPillar2">
           <div className="acp2Left">
-            <Image src={pillar2} />
+            <Image src={pillar2} alt="Pillar 2" />
           </div>
           <div className="acp2Right">
             <h2>
@@ -120,12 +120,12 @@ const About = () => {
             </p>
           </div>
           <div className="acp3Right">
-            <Image src={pillar3} />
+            <Image src={pillar3} alt="Pillar 3" />
           </div>
         </div>
         <div className="aboutContainerPillar4">
           <div className="acp4Left">
-            <Image src={pillar4} />
+            <Image src={pillar4} alt="Pillar 4" />
           </div>
           <div className="acp4Right">
             <h2>

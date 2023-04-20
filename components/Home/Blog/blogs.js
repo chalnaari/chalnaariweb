@@ -11,6 +11,7 @@ export const blogs = [
     image: blog1,
     title: "MAKE DREAMS COME TRUE FOR INTERNATIONAL WOMEN’S DAY",
     author: "Harshit Kumar",
+    alt: "Blog Image 1",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     date: "23/03/2023",
@@ -21,6 +22,7 @@ export const blogs = [
     image: blog2,
     title: "5 SIGNS OF AN ABUSIVE RELATIONSHIP",
     author: "Harshit Kumar",
+    alt: "Blog Image 2",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     date: "23/03/2023",
@@ -31,6 +33,7 @@ export const blogs = [
     image: blog3,
     title: "A HISTORY OF INTERNATIONAL WOMEN’S DAY",
     author: "Harshit Kumar",
+    alt: "Blog Image 3",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     date: "23/03/2023",
@@ -41,6 +44,7 @@ export const blogs = [
     image: blog4,
     title: "INSPIRING FEMINIST QUOTES BY WOMEN",
     author: "Harshit Kumar",
+    alt: "Blog Image 4",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     date: "23/03/2023",

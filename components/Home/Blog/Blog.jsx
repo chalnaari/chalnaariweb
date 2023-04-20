@@ -17,7 +17,7 @@ const Blog = () => {
               <>
                 <div className="blogSChild">
                   <div className="blogSChildImage">
-                    <Image src={blog.image} />
+                    <Image src={blog.image} alt={blog.alt} />
                   </div>
                   <div className="blogSChildContent">
                     <h4>
