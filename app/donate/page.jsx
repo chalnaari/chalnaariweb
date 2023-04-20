@@ -38,6 +38,7 @@ const Donate = () => {
                 upon request.
               </p>
               <table>
+		<tbody>
                 <tr>
                   <td>
                     <b>Bank Name</b>
@@ -62,6 +63,7 @@ const Donate = () => {
                   </td>
                   <td className="no-border">BARB0KANMEE</td>
                 </tr>
+		</tbody>
               </table>
               <div className="qrCode">
                 <p className="upi">
