@@ -33,7 +33,7 @@ const Contact = () => {
           <h3>Email:</h3>
           <p>
             For any inquiries, please email us at{" "}
-            <a href="/">info@chalnaari.org</a>
+            <a href="/">info@chalnaari.com</a>
           </p>
 
           {/* <h3>Phone:</h3>
