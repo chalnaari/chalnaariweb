@@ -21,7 +21,6 @@ import {
   RiGroupLine,
   RiHandHeartLine,
   RiHome2Line,
-  RiHome4Line,
   RiLineChartLine,
   RiLinksLine,
   RiNewspaperLine,
@@ -86,9 +85,7 @@ const Navbar = () => {
         <div className="mainMenu">
           <ul>
             <li>
-              <a href="/">
-                <RiHome4Line className="homeIcon" />
-              </a>
+              <a href="/">Home</a>
             </li>
             <li>
               Who We Are

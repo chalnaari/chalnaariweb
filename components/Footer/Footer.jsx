@@ -2,11 +2,9 @@ import React from "react";
 import "./style.scss";
 import {
   RiFacebookFill,
-  RiHome2Fill,
   RiInstagramFill,
   RiLinkedinFill,
   RiMailFill,
-  RiPhoneFill,
   RiTwitterFill,
 } from "react-icons/ri";
 import Image from "next/image";
