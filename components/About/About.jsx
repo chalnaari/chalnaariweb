@@ -4,7 +4,7 @@ import { CommonButton } from "../Buttons/Buttons";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import Image from "next/image";
 
-import aboutSection from "../../public/aboutSection.png";
+import aboutSection from "@/public/assets/aboutSection.png";
 
 const About = () => {
   return (

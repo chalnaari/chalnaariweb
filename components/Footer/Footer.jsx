@@ -8,7 +8,7 @@ import {
   RiTwitterFill,
 } from "react-icons/ri";
 import Image from "next/image";
-import chalnaariLogoWhite from "../../public/chalnaariLogoWhite.png";
+import chalnaariLogoWhite from "@/public/assets/chalnaariLogoWhite.png";
 import Link from "next/link";
 
 const Footer = () => {

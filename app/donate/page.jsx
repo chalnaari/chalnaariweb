@@ -2,7 +2,7 @@ import React from "react";
 import "./style.scss";
 import DonateForm from "@/components/donateForm/page";
 import Image from "next/image";
-import qr from "../../public/qr.jpg";
+import qr from "@/public/assets/qr.jpg";
 import DonateCalendar from "@/components/DonateCalendar/page";
 
 export const metadata = {
@@ -38,32 +38,32 @@ const Donate = () => {
                 upon request.
               </p>
               <table>
-		<tbody>
-                <tr>
-                  <td>
-                    <b>Bank Name</b>
-                  </td>
-                  <td>Bank of Baroda</td>
-                </tr>
-                <tr>
-                  <td>
-                    <b>Account Name</b>
-                  </td>
-                  <td>Chal Naari Pvt. Ltd</td>
-                </tr>
-                <tr>
-                  <td>
-                    <b>Account Number</b>
-                  </td>
-                  <td>0000 0000 0000 0000</td>
-                </tr>
-                <tr>
-                  <td className="no-border">
-                    <b>IFSC Code</b>
-                  </td>
-                  <td className="no-border">BARB0KANMEE</td>
-                </tr>
-		</tbody>
+                <tbody>
+                  <tr>
+                    <td>
+                      <b>Bank Name</b>
+                    </td>
+                    <td>Bank of Baroda</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>Account Name</b>
+                    </td>
+                    <td>Chal Naari Pvt. Ltd</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>Account Number</b>
+                    </td>
+                    <td>0000 0000 0000 0000</td>
+                  </tr>
+                  <tr>
+                    <td className="no-border">
+                      <b>IFSC Code</b>
+                    </td>
+                    <td className="no-border">BARB0KANMEE</td>
+                  </tr>
+                </tbody>
               </table>
               <div className="qrCode">
                 <p className="upi">

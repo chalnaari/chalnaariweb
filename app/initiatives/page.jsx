@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.scss";
 import { RiLinksFill } from "react-icons/ri";
-import a from "next/link";
 
 export const metadata = {
   title: "Initiatives - Chal Naari: Ashes To Re-birth",

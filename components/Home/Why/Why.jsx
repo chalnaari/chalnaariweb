@@ -2,7 +2,7 @@ import React from "react";
 import "./style.scss";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import Image from "next/image";
-import whyImage from "../../../public/whyImage.png";
+import whyImage from "@/public/assets/whyImage.png";
 
 const Why = () => {
   return (

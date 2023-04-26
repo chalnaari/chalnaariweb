@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.scss";
-import pillar1 from "../../public/pillar1.png";
-import pillar2 from "../../public/pillar2.png";
-import pillar3 from "../../public/pillar3.png";
-import pillar4 from "../../public/pillar4.png";
+import pillar1 from "@/public/assets/pillar1.png";
+import pillar2 from "@/public/assets/pillar2.png";
+import pillar3 from "@/public/assets/pillar3.png";
+import pillar4 from "@/public/assets/pillar4.png";
 import Image from "next/image";
 import { RiLinksFill } from "react-icons/ri";
 

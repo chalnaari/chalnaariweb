@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import chalnaari from "../../public/chalnaari.png";
+import chalnaari from "@/public/assets/chalnaari.png";
 import {
   AiOutlineGlobal,
   AiOutlineInfoCircle,

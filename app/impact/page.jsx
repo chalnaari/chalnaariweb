@@ -2,18 +2,18 @@ import React from "react";
 import "./style.scss";
 import { RiLinksFill } from "react-icons/ri";
 import Image from "next/image";
-import image1 from "../../public/impactVisuals/image1.jpg";
-import image2 from "../../public/impactVisuals/image2.jpg";
-import image3 from "../../public/impactVisuals/image3.jpg";
-import image4 from "../../public/impactVisuals/image4.jpg";
-import image5 from "../../public/impactVisuals/image5.jpg";
-import image6 from "../../public/impactVisuals/image6.jpg";
-import image7 from "../../public/impactVisuals/image7.jpg";
-import image8 from "../../public/impactVisuals/image8.jpg";
-import image9 from "../../public/impactVisuals/image9.jpg";
-import image10 from "../../public/impactVisuals/image10.jpg";
-import image11 from "../../public/impactVisuals/image11.jpg";
-import image12 from "../../public/impactVisuals/image12.jpg";
+import image1 from "@/public/assets/impactVisuals/image1.jpg";
+import image2 from "@/public/assets/impactVisuals/image2.jpg";
+import image3 from "@/public/assets/impactVisuals/image3.jpg";
+import image4 from "@/public/assets/impactVisuals/image4.jpg";
+import image5 from "@/public/assets/impactVisuals/image5.jpg";
+import image6 from "@/public/assets/impactVisuals/image6.jpg";
+import image7 from "@/public/assets/impactVisuals/image7.jpg";
+import image8 from "@/public/assets/impactVisuals/image8.jpg";
+import image9 from "@/public/assets/impactVisuals/image9.jpg";
+import image10 from "@/public/assets/impactVisuals/image10.jpg";
+import image11 from "@/public/assets/impactVisuals/image11.jpg";
+import image12 from "@/public/assets/impactVisuals/image12.jpg";
 
 export const metadata = {
   title: "",
