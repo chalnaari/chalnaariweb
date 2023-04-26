@@ -35,24 +35,6 @@ const Navbar = () => {
   const [color, setColor] = useState(false);
 
   const [showMenu, setShowMenu] = useState(false);
-  // const [showDropDown, setShowDropDown] = useState(false);
-  // const [showDropDown2, setShowDropDown2] = useState(false);
-
-  // const toggleDropDown = () => {
-  //   if (showDropDown === false) {
-  //     setShowDropDown(true);
-  //   } else {
-  //     setShowDropDown(false);
-  //   }
-  // };
-
-  // const toggleDropDown2 = () => {
-  //   if (showDropDown2 === false) {
-  //     setShowDropDown2(true);
-  //   } else {
-  //     setShowDropDown2(false);
-  //   }
-  // };
 
   const toggleMenu = () => {
     if (showMenu === false) {
