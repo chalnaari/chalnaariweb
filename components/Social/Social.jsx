@@ -13,28 +13,28 @@ const Social = () => {
         <div className="socialSChild">
           <h4>
             <a href="/" className="socialSFacebook">
-              facebook.
+              facebook
             </a>
           </h4>
         </div>
         <div className="socialSChild">
           <h4>
             <a href="/" className="socialSTwitter">
-              twitter.
+              twitter
             </a>
           </h4>
         </div>
         <div className="socialSChild">
           <h4>
             <a href="/" className="socialSLinkedin">
-              linkedin.
+              linkedin
             </a>
           </h4>
         </div>
         <div className="socialSChild">
           <h4>
             <a href="/" className="socialSInstagram">
-              instagram.
+              instagram
             </a>
           </h4>
         </div>
