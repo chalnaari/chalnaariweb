@@ -9,7 +9,7 @@ const Blog = () => {
     <section>
       <div className="blogSection">
         <div className="blogSectionHead">
-          <h2>Chal Naari Blogs.</h2>
+          <h2>Chal Naari Blogs</h2>
         </div>
         <div className="blogSContainer">
           {blogs.map((blog) => {
