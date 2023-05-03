@@ -43,7 +43,7 @@ const Donate = () => {
                     <td>
                       <b>Bank Name</b>
                     </td>
-                    <td>Bank of Baroda</td>
+                    <td>XXXX XX XXXXXX</td>
                   </tr>
                   <tr>
                     <td>
@@ -61,7 +61,7 @@ const Donate = () => {
                     <td className="no-border">
                       <b>IFSC Code</b>
                     </td>
-                    <td className="no-border">BARB0KANMEE</td>
+                    <td className="no-border">XXXXXXXXXX</td>
                   </tr>
                 </tbody>
               </table>
@@ -70,7 +70,7 @@ const Donate = () => {
                   <span>
                     <b>UPI ID: </b>
                   </span>
-                  chalnaari@upi
+                  demoupiid@upi
                 </p>
                 <Image src={qr} className="qrImage" alt="QR Code" />
               </div>
