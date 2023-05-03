@@ -11,7 +11,7 @@ const About = () => {
     <>
       <section className="aboutSection">
         <div className="aboutSectionHead">
-          <h2>About Chal Naari.</h2>
+          <h2>About Chal Naari</h2>
         </div>
         <div className="aboutSectionContainer">
           <div className="ascLeft">
