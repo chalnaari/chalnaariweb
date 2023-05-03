@@ -43,7 +43,7 @@ const Donate = () => {
                     <td>
                       <b>Bank Name</b>
                     </td>
-                    <td>XXXX XX XXXXXX</td>
+                    <td>XAXA XA XAXAXA</td>
                   </tr>
                   <tr>
                     <td>
