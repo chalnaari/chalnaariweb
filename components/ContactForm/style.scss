@@ -1,0 +1,78 @@
+// color variables
+$pink: #b7029f;
+$white: #fff;
+$black: #171717;
+$black2: #2e2e2e;
+$grey: #d3d3d3;
+$yellow: #fce205;
+
+// font size variables
+$a: 1.1rem;
+$h1: 2rem;
+$h2: 1.8rem;
+$h3: 1.5rem;
+$h4: 1.3rem;
+
+form {
+  width: 100%;
+  margin: 0 0 2rem 0;
+
+  .contactSent {
+    color: green;
+    text-align: center;
+  }
+
+  .contactError {
+    color: red;
+    text-align: center;
+  }
+
+  input {
+    width: 100%;
+    border: 1px solid $grey;
+    padding: 0.5rem;
+    font-size: $a;
+    margin: 0 0 1rem 0;
+    border-radius: 0.2rem;
+    outline: none;
+  }
+
+  select {
+    width: 100%;
+    border: 1px solid $grey;
+    padding: 0.5rem;
+    font-size: $a;
+    margin: 0 0 1rem 0;
+    border-radius: 0.2rem;
+    outline: none;
+    color: grey;
+  }
+
+  textarea {
+    width: 100%;
+    border: 1px solid $grey;
+    padding: 0.5rem;
+    font-size: $a;
+    margin: 0 0 1rem 0;
+    border-radius: 0.2rem;
+    outline: none;
+    resize: none;
+  }
+
+  button {
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid $grey;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    background-color: $yellow;
+    color: $black;
+    font-size: $a;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+      transition: 0.3s;
+    }
+  }
+}

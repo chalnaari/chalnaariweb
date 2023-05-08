@@ -7,6 +7,7 @@ import {
   RiTwitterFill,
   RiWhatsappFill,
 } from "react-icons/ri";
+import ContactForm from "@/components/ContactForm/ContactForm";
 
 export const metadata = {
   title: "Contact Us - Chal Naari: Ashes To Re-birth",
@@ -89,37 +90,7 @@ const Contact = () => {
         </div>
         <div className="ccRight">
           <div className="ccRightForm">
-            <form>
-              <div>
-                <input type="text" placeholder="Name" />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="phone" placeholder="Phone" />
-              </div>
-              <div>
-                <select>
-                  <option>Reason For Contacting</option>
-                  <option>General Inquiry</option>
-                  <option>Donation Inquiry</option>
-                  <option>Volunteer Inquiry</option>
-                  <option>Partnerships Inquiry</option>
-                  <option>Media Inquiry</option>
-                  <option>Sponsorship Inquiry</option>
-                  <option>Feedback or Testimonial</option>
-                  <option>Report a Problem or Issue</option>
-                  <option>Job or Career Opportunities Inquiry</option>
-                  <option>Event Inquiry</option>
-                  <option>Other (write it in message box)</option>
-                </select>
-              </div>
-              <div>
-                <textarea placeholder="Enter Your Message" rows="5" />
-              </div>
-              <button>Submit</button>
-            </form>
+            <ContactForm />
 
             <p>
               Please note that it may take us a few business days to reply to
