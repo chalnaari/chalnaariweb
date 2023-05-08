@@ -114,7 +114,7 @@ function ContactForm() {
       </div>
       {status === "success" ? (
         <p className="contactSent margin1">
-          Thank you for submitting your message. I will get back to you as soon
+          Thank you for submitting your message. We will get back to you as soon
           as possible.
         </p>
       ) : (
