@@ -90,59 +90,59 @@ $h4: 1.3rem;
     .ccRight {
       width: 40%;
 
-      form {
-        width: 100%;
-        margin: 0 0 2rem 0;
+      // form {
+      //   width: 100%;
+      //   margin: 0 0 2rem 0;
 
-        input {
-          width: 100%;
-          border: 1px solid $grey;
-          padding: 0.5rem;
-          font-size: $a;
-          margin: 0 0 1rem 0;
-          border-radius: 0.2rem;
-          outline: none;
-        }
+      //   input {
+      //     width: 100%;
+      //     border: 1px solid $grey;
+      //     padding: 0.5rem;
+      //     font-size: $a;
+      //     margin: 0 0 1rem 0;
+      //     border-radius: 0.2rem;
+      //     outline: none;
+      //   }
 
-        select {
-          width: 100%;
-          border: 1px solid $grey;
-          padding: 0.5rem;
-          font-size: $a;
-          margin: 0 0 1rem 0;
-          border-radius: 0.2rem;
-          outline: none;
-          color: grey;
-        }
+      //   select {
+      //     width: 100%;
+      //     border: 1px solid $grey;
+      //     padding: 0.5rem;
+      //     font-size: $a;
+      //     margin: 0 0 1rem 0;
+      //     border-radius: 0.2rem;
+      //     outline: none;
+      //     color: grey;
+      //   }
 
-        textarea {
-          width: 100%;
-          border: 1px solid $grey;
-          padding: 0.5rem;
-          font-size: $a;
-          margin: 0 0 1rem 0;
-          border-radius: 0.2rem;
-          outline: none;
-          resize: none;
-        }
+      //   textarea {
+      //     width: 100%;
+      //     border: 1px solid $grey;
+      //     padding: 0.5rem;
+      //     font-size: $a;
+      //     margin: 0 0 1rem 0;
+      //     border-radius: 0.2rem;
+      //     outline: none;
+      //     resize: none;
+      //   }
 
-        button {
-          padding: 0.5rem;
-          width: 100%;
-          border: 1px solid $grey;
-          border-radius: 0.2rem;
-          cursor: pointer;
-          background-color: $yellow;
-          color: $black;
-          font-size: $a;
+      //   button {
+      //     padding: 0.5rem;
+      //     width: 100%;
+      //     border: 1px solid $grey;
+      //     border-radius: 0.2rem;
+      //     cursor: pointer;
+      //     background-color: $yellow;
+      //     color: $black;
+      //     font-size: $a;
 
-          &:hover {
-            background-color: $black;
-            color: $white;
-            transition: 0.3s;
-          }
-        }
-      }
+      //     &:hover {
+      //       background-color: $black;
+      //       color: $white;
+      //       transition: 0.3s;
+      //     }
+      //   }
+      // }
 
       p {
         margin: 0 0 1rem 0;
